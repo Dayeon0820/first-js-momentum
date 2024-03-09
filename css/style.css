@@ -85,6 +85,17 @@ body{
 .weather-column{
     margin-top: 10px;
     margin-left: -5px;
+    display: flex;
+    align-items: center;
+}
+
+.weather-icon{
+    height: 50px;
+    width: 50px;
+}
+
+.weather_city{
+    margin-left: 10px;
 }
 
 #todo-form input{
@@ -146,8 +157,8 @@ body{
 }
 
 #todo-list button {
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 2px solid rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid white;
     border-radius: 5px;
     width: 30px;
     height: 30px;

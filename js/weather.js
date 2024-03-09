@@ -6,8 +6,13 @@ function onGeoOk(position){
     fetch(url).then(Response => Response.json()).then(data => { 
         const weather = document.querySelector(".weather_weather");
         const city= document.querySelector(".weather_city");
+        const getIcon= document.querySelector(".weather-icon");
+        const icon = data.weather[0].icon;
+        const iconURL = `http://openweathermap.org/img/wn/${icon}@2x.png`;
         weather.innerText = `${data.weather[0].main} / ${data.main.temp}`
-        city.innerText = data.name});
+        city.innerText = data.name
+        getIcon.setAttribute('src', iconURL);
+        });
     
 }
 
