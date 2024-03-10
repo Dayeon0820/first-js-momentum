@@ -14,7 +14,7 @@ function onSubmit(event){
 }
 
 function greetingText(username){
-    greeting.innerText=`Hello ${username}!` ;
+    greeting.innerText=`Good morning ${username}!` ;
 }
 
 const savedUsername= localStorage.getItem(KEY_USERNAME);
